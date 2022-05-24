@@ -204,7 +204,9 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .effect .button-ef:hover,
-.effect .button-ef:focus {
+.effect .button-ef:focus,
+.footer_connect_btn:hover,
+.footer_connect_btn:focus {
   background-color: var(--back-color-button);
 }
 /*Особенности и команда*/
@@ -806,10 +808,10 @@ h4 {
   height: 15px;
 
   transform: scale(0.2);
-  opacity: 1;
+  opacity: 0;
 
-  /*transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon-unchecked {
@@ -871,4 +873,59 @@ h4 {
 .checkbox-label-link {
   color: var(--hover-color);
   text-decoration-line: underline;
+}
+
+.footer_connect_btn {
+  display: flex;
+  padding: 10px 62px 10px 29px;
+  margin-left: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px var(--box-shadow);
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_connect {
+  margin-top: 72px;
+  margin-left: 93px;
+}
+.footer_connect_telegram {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer_connect-icon {
+  position: absolute;
+  right: 28px;
+  fill: white;
+}
+
+.footer_connect-input {
+  display: flex;
+  width: 358px;
+  height: 50px;
+  padding: 12px 16px;
+
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  background-color: var(--back-color-ef);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_connect-field:focus-within .footer_connect-input {
+  outline: 0;
+  border-color: var(--hover-color);
 }
