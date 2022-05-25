@@ -203,6 +203,9 @@ ul {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.effect .order-form .btn_send {
+  padding: 10px 55px;
+}
 .effect .button-ef:hover,
 .effect .button-ef:focus,
 .footer_connect_btn:hover,
@@ -632,7 +635,6 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
   height: 581px;
 
   padding: 40px;
@@ -754,8 +756,6 @@ h4 {
   position: absolute;
   top: 50%;
   left: 13px;
-
-  /*color: var(--title-color);*/
   fill: currentColor;
   transform: translateY(-50%);
 
